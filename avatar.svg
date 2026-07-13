@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" shape-rendering="crispEdges">
+  <defs>
+    <pattern id="grid" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="none"/>
+      <rect width="16" height="16" fill="none" stroke="#ddd" stroke-width="1"/>
+    </pattern>
+    <g id="diamond">
+      <rect x="8" y="0" width="8" height="8"/>
+      <rect x="0" y="8" width="24" height="8"/>
+      <rect x="8" y="16" width="8" height="8"/>
+    </g>
+    <g id="dot-ring">
+      <rect x="0" y="0" width="4" height="4"/>
+      <rect x="12" y="0" width="4" height="4"/>
+      <rect x="0" y="12" width="4" height="4"/>
+      <rect x="12" y="12" width="4" height="4"/>
+    </g>
+  </defs>
+
+  <rect width="512" height="512" fill="#eaeaea"/>
+  <rect width="512" height="512" fill="url(#grid)"/>
+
+  <!-- Outer border frame -->
+  <rect x="20" y="20" width="472" height="8" fill="#bbb"/>
+  <rect x="20" y="484" width="472" height="8" fill="#bbb"/>
+  <rect x="20" y="20" width="8" height="472" fill="#bbb"/>
+  <rect x="484" y="20" width="8" height="472" fill="#bbb"/>
+  <rect x="28" y="28" width="456" height="2" fill="#888"/>
+  <rect x="28" y="482" width="456" height="2" fill="#888"/>
+  <rect x="28" y="28" width="2" height="456" fill="#888"/>
+  <rect x="482" y="28" width="2" height="456" fill="#888"/>
+
+  <!-- Inner screen -->
+  <rect x="30" y="30" width="452" height="452" fill="#f5f5f5"/>
+
+  <!-- Decorative corner diamonds -->
+  <use href="#diamond" x="46" y="46" fill="#ccc"/>
+  <use href="#diamond" x="442" y="46" fill="#ccc"/>
+  <use href="#diamond" x="46" y="442" fill="#ccc"/>
+  <use href="#diamond" x="442" y="442" fill="#ccc"/>
+
+  <!-- Decorative dot rings -->
+  <use href="#dot-ring" x="100" y="46" fill="#ccc"/>
+  <use href="#dot-ring" x="388" y="46" fill="#ccc"/>
+  <use href="#dot-ring" x="100" y="442" fill="#ccc"/>
+  <use href="#dot-ring" x="388" y="442" fill="#ccc"/>
+
+  <!-- Pixel art corner flourishes (top-right) -->
+  <g fill="#ddd">
+    <rect x="342" y="46" width="6" height="24"/>
+    <rect x="342" y="46" width="32" height="6"/>
+    <rect x="374" y="52" width="6" height="18"/>
+  </g>
+  <!-- Bottom-left flourish -->
+  <g fill="#ddd">
+    <rect x="46" y="442" width="32" height="6"/>
+    <rect x="46" y="442" width="6" height="24"/>
+    <rect x="52" y="460" width="24" height="6"/>
+  </g>
+  <!-- Top-left flourish -->
+  <g fill="#ddd">
+    <rect x="46" y="46" width="28" height="6"/>
+    <rect x="46" y="46" width="6" height="28"/>
+  </g>
+  <!-- Bottom-right flourish -->
+  <g fill="#ddd">
+    <rect x="438" y="442" width="28" height="6"/>
+    <rect x="460" y="442" width="6" height="28"/>
+  </g>
+
+  <!-- Pixel art L-corner bracket -->
+  <!-- Horizontal arm -->
+  <rect x="100" y="100" width="312" height="24" fill="#888"/>
+  <rect x="100" y="100" width="312" height="6" fill="#333"/>
+  <rect x="100" y="118" width="312" height="6" fill="#ccc"/>
+  <rect x="404" y="106" width="8" height="12" fill="#1a1a1a"/>
+  <rect x="404" y="106" width="4" height="4" fill="#000"/>
+  <rect x="408" y="110" width="4" height="4" fill="#000"/>
+
+  <!-- Vertical arm -->
+  <rect x="100" y="100" width="24" height="312" fill="#888"/>
+  <rect x="100" y="100" width="6" height="312" fill="#333"/>
+  <rect x="118" y="100" width="6" height="312" fill="#ccc"/>
+  <rect x="106" y="404" width="12" height="8" fill="#1a1a1a"/>
+  <rect x="106" y="404" width="4" height="4" fill="#000"/>
+  <rect x="110" y="408" width="4" height="4" fill="#000"/>
+
+  <!-- Inner corner area -->
+  <rect x="124" y="124" width="288" height="288" fill="#eaeaea"/>
+  <rect x="124" y="124" width="288" height="2" fill="#ddd"/>
+
+  <!-- Pixel art rivets/screws on bracket -->
+  <rect x="108" y="108" width="8" height="8" fill="#aaa"/>
+  <rect x="108" y="108" width="4" height="4" fill="#555"/>
+  <rect x="396" y="108" width="8" height="8" fill="#aaa"/>
+  <rect x="396" y="108" width="4" height="4" fill="#555"/>
+  <rect x="108" y="396" width="8" height="8" fill="#aaa"/>
+  <rect x="108" y="396" width="4" height="4" fill="#555"/>
+
+  <!-- Decorative pixel lines along bracket inner edge -->
+  <g fill="#ddd">
+    <rect x="124" y="124" width="276" height="2"/>
+    <rect x="124" y="124" width="2" height="276"/>
+  </g>
+
+  <!-- Pixel star (5x5 grid, 32px blocks, centered at 256,256) -->
+  <g fill="#1a1a1a">
+    <rect x="240" y="192" width="32" height="32"/>
+    <rect x="208" y="224" width="32" height="32"/>
+    <rect x="240" y="224" width="32" height="32"/>
+    <rect x="272" y="224" width="32" height="32"/>
+    <rect x="176" y="256" width="32" height="32"/>
+    <rect x="208" y="256" width="32" height="32"/>
+    <rect x="240" y="256" width="32" height="32"/>
+    <rect x="272" y="256" width="32" height="32"/>
+    <rect x="304" y="256" width="32" height="32"/>
+    <rect x="208" y="288" width="32" height="32"/>
+    <rect x="240" y="288" width="32" height="32"/>
+    <rect x="272" y="288" width="32" height="32"/>
+    <rect x="240" y="320" width="32" height="32"/>
+  </g>
+
+  <!-- Star glow pixels -->
+  <g fill="#999">
+    <rect x="240" y="176" width="8" height="8"/>
+    <rect x="272" y="176" width="8" height="8"/>
+    <rect x="160" y="256" width="8" height="8"/>
+    <rect x="344" y="256" width="8" height="8"/>
+    <rect x="240" y="336" width="8" height="8"/>
+    <rect x="272" y="336" width="8" height="8"/>
+    <rect x="176" y="208" width="8" height="8"/>
+    <rect x="336" y="208" width="8" height="8"/>
+    <rect x="208" y="176" width="8" height="8"/>
+    <rect x="304" y="176" width="8" height="8"/>
+  </g>
+
+  <!-- Star sparkle pixels -->
+  <g fill="#666">
+    <rect x="160" y="176" width="8" height="8"/>
+    <rect x="344" y="176" width="8" height="8"/>
+    <rect x="160" y="328" width="8" height="8"/>
+    <rect x="344" y="328" width="8" height="8"/>
+    <rect x="304" y="224" width="8" height="8"/>
+    <rect x="208" y="320" width="8" height="8"/>
+  </g>
+</svg>
